@@ -1,0 +1,13 @@
+package Dto;
+
+import java.util.Date;
+
+public class UserDto {
+	
+	private String nombre;
+	private String surname;
+	private String password;
+	private Date fecha_creacion;
+	private String celular;
+
+}

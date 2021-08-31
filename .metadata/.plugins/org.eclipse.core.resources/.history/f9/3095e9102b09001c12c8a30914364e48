@@ -1,0 +1,5 @@
+package com.anac.app.repository;
+
+public interface UserRepository {
+
+}

@@ -1,0 +1,1 @@
+Spring.datasource.url = jdbc:mysql://localhost:3306/db_anac

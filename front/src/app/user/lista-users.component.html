@@ -1,0 +1,24 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Username</th>
+        <th scope="col">Celular</th>
+        <th scope="col">Mail</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Borrar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.nombre}}</td>
+        <td>{{user.surname}}</td>
+        <td>{{user.celular}}</td>
+        <td>{{user.email}}</td>
+        <td><button class="btn btn-outline-warning" routerLink="/editar/{{user.id}}"><i class="far fa-edit"></i> Editar</button></td>
+        <td><button class="btn btn-outline-danger" (click)="onBorrar(user.id)"><i class="far fa-trash-alt"></i> Eliminar</button></td>
+      </tr>
+    </tbody>
+  </table>

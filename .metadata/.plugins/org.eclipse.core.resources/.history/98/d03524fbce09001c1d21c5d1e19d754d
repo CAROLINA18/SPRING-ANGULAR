@@ -1,0 +1,7 @@
+package com.anac.app.services;
+
+@service
+@transactional
+public class UserService {
+
+}

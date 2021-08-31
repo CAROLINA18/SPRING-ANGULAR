@@ -1,0 +1,34 @@
+<div class="container" *ngIf="user">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <form (ngSubmit)="onUpdate()"  novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre"
+                    [(ngModel)]="user.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Email</label>
+                    <input type="text" class="form-control" id="email" name="email"
+                    [(ngModel)]="user.email" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Username</label>
+                    <input type="text" class="form-control" id="surname" name="surname"
+                    [(ngModel)]="user.surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">password</label>
+                    <input type="text" class="form-control" id="password" name="password"
+                    [(ngModel)]="user.password" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Celular</label>
+                    <input type="text" class="form-control" id="celular" name="celular"
+                    [(ngModel)]="user.celular" required>
+                </div>
+                <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

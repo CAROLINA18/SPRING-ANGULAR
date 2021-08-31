@@ -1,0 +1,21 @@
+package com.anac.app.services;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.anac.app.repository.UserRepository;
+import com.anac.app.entity.User;
+@Service
+@Transactional
+public class UserService {
+	
+	@Autowired
+	UserRepository userRepository;
+	
+	public List<User> list(){
+		
+	}
+
+}
